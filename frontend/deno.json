@@ -1,0 +1,6 @@
+{
+    "tasks": {
+        "shadcn-add": "deno run -A npm:shadcn-svelte@latest add",
+        "node-prune": "pnpx node-prune"
+    }
+}

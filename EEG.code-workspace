@@ -1,0 +1,97 @@
+{
+	"folders": [
+		{
+			"name": "EEG",
+			"path": "."
+		},
+		{
+			"name": "后端 src",
+			"path": "backend/src"
+		},
+		{
+			"name": "前端 src",
+			"path": "frontend/src"
+		},
+	],
+	"settings": {
+		"files.associations": {
+			"**/app.css": "tailwindcss"
+		},
+		"files.exclude": {
+			"**/src": true,
+			"**/*.d.ts": true,
+			"**/*.html": true,
+			"**/deno.lock": true,
+			"frontend/node_modules": true,
+			"frontend/.svelte-kit/**": true,
+			"frontend/.npmrc": true,
+			"frontend/.prettier*": true,
+		},
+		"VsCodeTaskButtons.showCounter": false,
+		"VsCodeTaskButtons.tasks": [
+			{
+				"label": "$(archive) 打包",
+				"task": "build",
+				"tooltip": "build",
+				"color": "warning"
+			},
+			{
+				"label": "$(rocket) 开发",
+				"task": "dev",
+				"tooltip": "dev",
+				"color": "warning"
+			},
+		],
+		"typescript.preferences.importModuleSpecifier": "non-relative",
+        "javascript.preferences.importModuleSpecifier": "non-relative",
+        "tailwindCSS.suggestions": true,
+		"catppuccin-icons.associations.folders": {
+			"tasks": "folder_audit",
+			"routes/testee": "folder_vercel",
+			"routes/tester": "folder_vercel",
+			"custom": "folder_themes",
+			"ui": "folder_views",
+			"consts": "folder_constant"
+		},
+		"catppuccin-icons.associations.files": {
+			"+page.svelte": "java-class",
+			"+error.svelte": "java-exception",
+			"+layout.svelte": "java-class-abstract"
+		},
+		"trae.tab.enableRename": false,
+		"trae.tab.enableAutoImport": false,
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"type": "shell",
+				"label": "build",
+				"command": "powershell",
+				"args": [
+					"./tasks/build.ps1"
+				],
+				"problemMatcher": []
+			},
+			{
+				"type": "shell",
+				"label": "dev",
+				"command": "powershell",
+				"args": [
+					"./tasks/dev.ps1"
+				]
+			}
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"qufiwefefwoyn.inline-sql-syntax",
+            "denoland.vscode-deno",
+            "ms-vscode.vscode-typescript-next",
+            "alexcvzz.vscode-sqlite",
+            "1yib.svelte-bundle",
+			"bradlc.vscode-tailwindcss",
+			"catppuccin.catppuccin-vsc-icons"
+		]
+	}
+}

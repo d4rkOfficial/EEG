@@ -1,0 +1,47 @@
+# 依赖目录
+**/node_modules/
+**/build/
+**/.deno/
+**/.venv/
+
+# 构建输出
+**/dist/
+**/out/
+
+# 前端相关
+**/.svelte-kit/
+**/.vite/
+**/vite.config.js.timestamp-*
+**/vite.config.ts.timestamp-*
+
+# 后端相关
+**/deno.lock
+**/*.sqlite
+
+# Python相关
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/*.so
+
+# 环境变量和配置
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 编辑器和IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 缓存
+**/.cache/
+**/.parcel-cache/
