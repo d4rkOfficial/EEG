@@ -13,24 +13,11 @@
 **/.vite/
 **/vite.config.js.timestamp-*
 **/vite.config.ts.timestamp-*
+**/pnpm-lock.yaml
 
 # 后端相关
 **/deno.lock
 **/*.sqlite
-
-# Python相关
-**/__pycache__/
-**/*.pyc
-**/*.pyo
-**/*.pyd
-**/*.so
-
-# 环境变量和配置
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # 编辑器和IDE
 .vscode/
