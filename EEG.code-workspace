@@ -26,6 +26,7 @@
             "frontend/.svelte-kit/**": true,
             "frontend/.npmrc": true,
             "frontend/.prettier*": true,
+            // "**/*.css": true,
         },
         "VsCodeTaskButtons.showCounter": false,
         "VsCodeTaskButtons.tasks": [
@@ -91,7 +92,8 @@
             "alexcvzz.vscode-sqlite",
             "1yib.svelte-bundle",
             "bradlc.vscode-tailwindcss",
-            "catppuccin.catppuccin-vsc-icons"
+            "catppuccin.catppuccin-vsc-icons",
+            "spencerwmiles.vscode-task-buttons"
         ]
     }
 }

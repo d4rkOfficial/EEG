@@ -1,5 +1,6 @@
 import { handleJsonRequest } from './handle-json-request.ts'
 import { handleSerialData } from './handle-serial-data.ts'
+import { exportCsv } from '../database/export-csv.ts'
 
 type ClientType = 'tester' | 'testee'
 
@@ -40,6 +41,11 @@ export class WebSocketClient {
                         }
                         case 'set_clientType': {
                             this.type = withValue as ClientType
+                            break
+                        }
+                        case 'export_csv': {
+                            /** 默认导出全部，@see get-record.ts */
+                            exportCsv(withValue as undefined) 
                             break
                         }
                     }

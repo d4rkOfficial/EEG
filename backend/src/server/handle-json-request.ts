@@ -1,4 +1,4 @@
-export type RequestType = 'set_deviceId' | 'set_clientType' | 'invalid'
+export type RequestType = 'set_deviceId' | 'set_clientType' | 'invalid' | 'export_csv'
 
 const safeJsonParse = (json: string) => {
     try {
